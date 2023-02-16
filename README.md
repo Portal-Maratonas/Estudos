@@ -11,3 +11,5 @@ https://www.ev.org.br/cursos/html-avancado
 
 Curso HTML5 e CSS3 - Curso em Vídeo: <br>
   Módulo 1: https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n
+  Módulo 2: https://www.youtube.com/playlist?list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s
+  Conteúdo do GitHub: https://github.com/gustavoguanabara/html-css
