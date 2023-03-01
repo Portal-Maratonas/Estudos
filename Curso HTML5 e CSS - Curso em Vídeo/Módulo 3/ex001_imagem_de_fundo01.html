@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - Capítulo 19 - Colocando uma imagem de fundo no seu site</title>
+    <style>
+        body {
+            background-image: url("imagens_cap19/wallpaper001.jpg");
+            /* Lembrar de colocar o endereço do arquivo entre aspas. E basta pressionar o ctrl + espaço para poder escolher de maneira mais prática; */
+        }
+        div.quadrada {
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+        }
+        #q1 {
+            background-color: blue;
+        }
+        #q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+        #q3 {
+            background-image: url("imagens_cap19/pattern003.png");
+            /* Quando a imagem escolhida é muito pequena, ela se repete dentro do quadrado da div. Se for muito grande, ela não é mostrada de forma completa. E essa imagem não faz parte do conteúdo, é apenas para design, não tem 'semântica'; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrada" id="q1">
+
+    </div>
+    <div class="quadrada" id="q2">
+        
+    </div>
+    <div class="quadrada" id="q3">
+        
+    </div>
+</body>
+</body>
+</body>
+</html>
