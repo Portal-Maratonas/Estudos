@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 19 - Aula 07 - Centralização vertical de caixas</title>
+    <style>
+        #container {
+            background-image: url("imagens_cap19/target001.png");
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            background-color: rgb(228, 84, 247);
+            padding: 10px;
+        }
+        #conteudo {
+            background-image: url("imagens_cap19/target001.png");
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%;
+            /* margin: auto; Para o alinhamento horizontal */
+
+            transform: translate(-50%, -50%);
+            /* Com esse transform, temos o alinhamento vertical. */
+        }
+        main {
+            padding: 10px;
+            border: 1em solid pink;
+            height: 200px;
+            max-width: 500px;
+            text-align: center;
+            margin-top: 100px;
+            margin: 10px auto auto auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhamento Vertical</h1>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+
+    <main>
+        <h2>Teste com Bloco</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam delectus ullam quas! Aliquid earum debitis quam odit facilis distinctio sint possimus ad nesciunt. Veritatis quo nulla amet ullam odit debitis!</p>
+    </main>
+    
+</body>
+</html>
