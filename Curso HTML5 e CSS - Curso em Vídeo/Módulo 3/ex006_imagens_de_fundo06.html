@@ -8,17 +8,28 @@
     <style>
         body {
             height: 98vh;
+            /*
             background-color: black;
             background-image: url("imagens_cap19/wallpaper002.jpg");
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover; */
             /* O parâmetro 'contain' faz com que a imagem seja 100% exibida, sem nenhum corte. 
             Já o parâmetro 'cover' sobre a tela tod, mesmo que a imagem seja cortada (sem distorcer). 
             O parâmetro 'auto' apenas posiciona a imagem com o seu tamanho original, permite que a imagem seja cortada e não ocupa a tela toda. 
             */
 
-            /* Porém, caso o conteúdo seja muito grande, isto é, maior que a altura da imagem, havera uma quebra na imagem. No próximos exercícios será abordado como resolver essa questão. */
+            /* Porém, caso o conteúdo seja muito grande, isto é, maior que a altura da imagem, havera uma quebra na imagem. Para isso, é possível vincular a imagem ao conteúdo.  
+            background-attachment: fixed; */
+            /* O parâmetro 'scroll' faz a imagem rolar junto com o conteúdo. 
+            Já o 'fixed' mantém o fundo fixo. */
+
+            /* ShortHanD Background:
+                color > image > position > repeat > [size] > attachment
+                * O [size] não está funcionando;
+            */
+            background: black url('imagens_cap19/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main > h1 {
@@ -33,7 +44,7 @@
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 600px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -47,8 +58,10 @@
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam debitis enim eaque, culpa, ab obcaecati a placeat voluptate dolores facilis pariatur atque? Delectus ullam libero reprehenderit fugiat consectetur minus eligendi tempora alias at blanditiis, laboriosam dicta aperiam reiciendis nulla rem provident laudantium vitae ipsum accusamus aliquid enim, quod suscipit quam atque! Quos, ducimus at. Ducimus voluptate saepe iure rerum cupiditate voluptatibus officiis nemo aliquid suscipit? Aliquid officiis numquam vitae quos commodi necessitatibus exercitationem, temporibus voluptatum ab laboriosam quo molestias accusantium fuga cumque, sit magnam! Recusandae nihil praesentium cum consectetur, dicta atque asperiores ipsum nisi optio velit, voluptas, esse eos neque.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, mollitia asperiores recusandae dolorum numquam officiis eligendi temporibus laboriosam tenetur iure nam amet. Ducimus, incidunt fuga reprehenderit consequatur quam, quas esse facere consectetur maiores at non atque consequuntur numquam, enim aspernatur quisquam eaque amet optio nobis labore tempore quis deserunt dolores quos! Enim nihil, exercitationem temporibus nulla nostrum, aliquid obcaecati amet ad accusamus, beatae perferendis! Suscipit vel pariatur voluptatem cupiditate maxime.</p>
-
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam debitis enim eaque, culpa, ab obcaecati a placeat voluptate dolores facilis pariatur atque? Delectus ullam libero reprehenderit fugiat consectetur minus eligendi tempora alias at blanditiis, laboriosam dicta aperiam reiciendis nulla rem provident laudantium vitae ipsum accusamus aliquid enim, quod suscipit quam atque! Quos, ducimus at. Ducimus voluptate saepe iure rerum cupiditate voluptatibus officiis nemo aliquid suscipit? Aliquid officiis numquam vitae quos commodi necessitatibus exercitationem, temporibus voluptatum ab laboriosam quo molestias accusantium fuga cumque, sit magnam! Recusandae nihil praesentium cum consectetur, dicta atque asperiores ipsum nisi optio velit, voluptas, esse eos neque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, mollitia asperiores recusandae dolorum numquam officiis eligendi temporibus laboriosam tenetur iure nam amet. Ducimus, incidunt fuga reprehenderit consequatur quam, quas esse facere consectetur maiores at non atque consequuntur numquam, enim aspernatur quisquam eaque amet optio nobis labore tempore quis deserunt dolores quos! Enim nihil, exercitationem temporibus nulla nostrum, aliquid obcaecati amet ad accusamus, beatae perferendis! Suscipit vel pariatur voluptatem cupiditate maxime.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam debitis enim eaque, culpa, ab obcaecati a placeat voluptate dolores facilis pariatur atque? Delectus ullam libero reprehenderit fugiat consectetur minus eligendi tempora alias at blanditiis, laboriosam dicta aperiam reiciendis nulla rem provident laudantium vitae ipsum accusamus aliquid enim, quod suscipit quam atque! Quos, ducimus at. Ducimus voluptate saepe iure rerum cupiditate voluptatibus officiis nemo aliquid suscipit? Aliquid officiis numquam vitae quos commodi necessitatibus exercitationem, temporibus voluptatum ab laboriosam quo molestias accusantium fuga cumque, sit magnam! Recusandae nihil praesentium cum consectetur, dicta atque asperiores ipsum nisi optio velit, voluptas, esse eos neque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, mollitia asperiores recusandae dolorum numquam officiis eligendi temporibus laboriosam tenetur iure nam amet. Ducimus, incidunt fuga reprehenderit consequatur quam, quas esse facere consectetur maiores at non atque consequuntur numquam, enim aspernatur quisquam eaque amet optio nobis labore tempore quis deserunt dolores quos! Enim nihil, exercitationem temporibus nulla nostrum, aliquid obcaecati amet ad accusamus, beatae perferendis! Suscipit vel pariatur voluptatem cupiditate maxime.</p>
     </main>
-    
 </body>
 </html>
