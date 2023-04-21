@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 21 - Aula 13 - Agrupando Colunas em Colgroup</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.4em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid red;
+        }
+        .cnome {
+            background-color: yellow;
+        }
+
+        .cgrupo {
+            background-color: aqua;
+        }
+
+        .cprofissao {
+            background-color: chocolate;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercícios de Tabela</h1>
+    <table>
+        <colgroup>
+            <!-- Serve para personalizar colunas inteiras de uma vez. -->
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <!-- O span permite personalizar um grupo de n colunas. -->
+            <col class="cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Nascimento</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <th>Odair</th>
+            <th>20</th>
+            <th>01/11/2002</th>
+            <th>Estudante</th>
+        </tr>
+        <tr>
+            <th>Pomba</th>
+            <th>5</th>
+            <th>21/04/2023</th>
+            <th>Advogado</th>
+        </tr>
+        <tr>
+            <th>Porquinho</th>
+            <th>4</th>
+            <th>02/06/2020</th>
+            <th>Segurança</th>
+        </tr>
+        <tr>
+            <th>Panda</th>
+            <th>10</th>
+            <th>05/10/2013</th>
+            <th>Confeiteiro</th>
+        </tr>
+    </table>
+    
+</body>
+</html>
